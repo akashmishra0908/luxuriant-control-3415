@@ -1,0 +1,132 @@
+.nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid white ;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: black;
+}
+
+.nav>div:nth-child(1) {
+    width: 10%;
+    height: auto;
+    margin-left: 40px;
+}
+
+.nav>div:nth-child(2) {
+    width: 85%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.nav>div:nth-child(2)>div {
+    width: 95%;
+    height: auto;
+    display: flex;
+    font-size: large;
+    justify-content: space-evenly;
+    margin: 10px;
+   color: black;
+}
+.nav>div:nth-child(2)>div>a{
+    padding: 15px;
+}
+.nav>div:nth-child(2)>div :hover{
+    background-color:rgb(3, 73, 3);
+    border-radius: 10px;
+    color: #fff;
+}
+
+a {
+    font-size: 20px;
+  color: black;
+    text-decoration: none;
+}
+#burger{
+    display: none;
+}
+
+.why{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+     background-color:#0c3245;
+     color: white;
+     padding: 10px;
+     display: none; 
+ }
+ .teams>div{
+     display: flex;  
+     justify-content: space-evenly;
+     padding: 15px;
+     
+ }
+ .teams>div:hover{
+ background-color:#033954;
+ border-radius: 10px;
+ cursor: pointer;
+ }
+ .cases>div:hover{
+ background-color:#033954;
+ border-radius: 10px;
+ cursor: pointer;
+ }
+ .apps>div:hover{
+ background-color:#033954;
+ border-radius: 10px;
+ cursor: pointer;
+ }
+ .explore>div:hover{
+ background-color:#033954;
+ border-radius: 10px;
+ cursor: pointer;
+ }
+ .cases>div{
+     display: flex;
+     justify-content: space-evenly;
+     padding: 10px;
+ } 
+ .apps>div{
+      display: flex;
+     justify-content: space-evenly;
+     padding: 10px;
+ }
+ .explore>div{
+     display: flex;
+     justify-content: space-evenly;
+    padding: 20px; 
+     color: lightgreen;
+ }
+@media all and (min-width: 450px) and (max-width:999px){
+    .nav>div:nth-child(2) {
+        display: none;
+        
+        }
+        #burger{
+            display: block;
+        }
+        .why{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            display: none; 
+        }
+}
+@media all and (min-width: 100px) and (max-width:449px){
+    .nav>div:nth-child(2) {
+        display: none;
+        
+        }
+        #burger{
+            display: block;
+        }
+        .why{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            display: none; 
+        }
+}

@@ -1,0 +1,152 @@
+.contanier{
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    height: auto;
+    justify-content: space-evenly;
+    background-color: lightgreen;
+    
+}
+
+.contanier>div{
+    width: 48%;
+}
+.nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid white ;
+    background-color: rgb(1, 25, 1);
+    position: sticky;
+    top: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.nav>div:nth-child(1) {
+    width: 10%;
+    height: auto;
+    margin-left: 40px;
+}
+
+.nav>div:nth-child(2) {
+    width: 85%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.nav>div:nth-child(2)>div {
+    width: 95%;
+    height: auto;
+    display: flex;
+    font-size: large;
+    justify-content: space-evenly;
+    margin: 10px;
+   color:white
+}
+.nav>div:nth-child(2)>div>a{
+    padding: 15px;
+}
+.nav>div:nth-child(2)>div :hover{
+    background-color:rgb(3, 73, 3);
+    border-radius: 10px;
+}
+
+a {
+    font-size: 20px;
+  color: white;
+    text-decoration: none;
+}
+#burger{
+    display: none;
+}
+.contanier>div:nth-child(2){
+    margin: 70px;
+    padding-left:50px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    height: auto;
+    background-color: rgb(1, 1, 26);
+    border-radius: 20px;
+}
+.contanier>div:nth-child(1){
+    padding-left: 130px;
+    margin-top: 150px;
+}
+img{
+    width: 100%;
+    border-radius: 20px;
+}
+.contanier>div:nth-child(2) input{
+   margin: 15px;
+   width: 70%;
+   height: 40px;
+   border-radius: 10px;
+   text-align: center;
+}
+button{
+    border-radius: 10px;
+    width: 20%;
+    height: 30px;
+    
+}
+#logIn{
+    display: none;
+    padding: 50px;
+}
+@media all and (min-width:449px) and (max-width:999px) {
+    .contanier>div:nth-child(2){
+        width: auto;
+    }
+    .nav>div:nth-child(2) {
+        display: none;
+        
+        }
+        #burger{
+            display: block;
+            width: 10%;
+        }
+    .contanier>div:nth-child(2) input{
+        margin: 15px;
+        width: 70%;
+        height: 20px;
+        border-radius: 10px;
+        text-align: center;
+       }
+       button{
+        width: 35%;
+       }
+}
+@media all and (min-width:100px) and (max-width:499px){
+    .contanier{
+        flex-direction: column;
+        width: auto;
+    }
+    button{
+        width: 35%;
+    }
+    .contanier>div:nth-child(2){
+        width: auto;
+        display: inline;
+    }
+    .nav>div:nth-child(2) {
+        display: none;
+        
+        }
+        #burger{
+            display: block;
+            width: 10%;
+        }
+    .contanier>div:nth-child(2) input{
+        margin: 15px;
+        width: auto;
+        height: 20px;
+        border-radius: 10px;
+        text-align: center;
+        overflow: hidden;
+        z-index: 999999999999999;
+       }
+    }

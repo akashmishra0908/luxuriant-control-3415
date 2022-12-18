@@ -1,0 +1,96 @@
+.main{
+    background-color: rgb(1, 25, 1);;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+.burgerItem a{
+    border: 1px solid white;
+    display: block;
+    background-color:rgb(1, 28, 1);
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.main>div{
+    width: 48%;
+    border: 12px solid black;
+    display:flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.main a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+.why{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+     background-color:#0c3245;
+     color: white;
+     padding: 10px;
+     display: none; 
+ }
+ .teams>div{
+     display: flex;  
+     justify-content: space-evenly;
+     padding: 15px;
+     
+ }
+ .teams>div:hover{
+ background-color:#033954;
+ border-radius: 10px;
+ cursor: pointer;
+ }
+ .cases>div:hover{
+ background-color:#033954;
+ border-radius: 10px;
+ cursor: pointer;
+ }
+ .apps>div:hover{
+ background-color:#033954;
+ border-radius: 10px;
+ cursor: pointer;
+ }
+ .explore>div:hover{
+ background-color:#033954;
+ border-radius: 10px;
+ cursor: pointer;
+ }
+ .cases>div{
+     display: flex;
+     justify-content: space-evenly;
+     padding: 10px;
+ } 
+ .apps>div{
+      display: flex;
+     justify-content: space-evenly;
+     padding: 10px;
+ }
+ .explore>div{
+     display: flex;
+     justify-content: space-evenly;
+    padding: 20px; 
+     color: lightgreen;
+ }
+ .cross{
+    border-radius: 10px;
+ }
+ .cross>a>img{
+    border-radius: 30px;
+    margin-left: 120px;
+ }
+ @media all and (min-width:100px) and (max-width:999px) {
+    .why{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        display: none; 
+    } 
+ }

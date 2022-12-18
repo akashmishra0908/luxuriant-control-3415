@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="icon" style="border-radius: 50%;" type="image" href="./wrikeicon.png">
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <div class="nav">
+        <div>
+            <a href="./index.html"><img src="https://web-static.wrike.com/tp/static/assets/img/header-v2/wrike-logo-dark.svg" alt=""></a>
+        </div>
+        <div>
+            <div>
+                <a onclick="whyAk()">Why Akrike?</a> 
+                <a  onclick="features()">Features </a>
+                <a  onclick="resources()">Recources </a>
+                <a href="./pricing.html">Pricing</a>
+            </div>
+            <div>
+                <a href="">Contact Sales</a>
+                <a href="">En</a>
+                <a href="./login.html" style="color: rgb(38, 231, 38);">Log in</a>
+            </div>
+        </div>
+        <div id="burger">
+            <a href="./burger.html"><img width="45%" src="https://t4.ftcdn.net/jpg/03/05/87/61/240_F_305876177_4EzB8UJafxNruTRjfLgc57mb07Qn1cNv.jpg" alt=""></a>
+        </div>
+    </div>
+    <div class="contanier">
+        
+        <div><img src="data:image/png;base64,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" alt=""></div>
+        <div>
+        <button id="SU">Sign Up</button>
+        <button id="LI">Log In</button>
+        
+        <form id="signIn">
+            <input type="text" placeholder="enter your name" id="name" required><br>
+            <input type="email" placeholder="enter your mail" id="mail" required><br>
+            <input type="password" placeholder="enter your password"  id="password" required><br>
+            <input type="text" placeholder=" Re-enter your password" id="Repassword" required><br>
+            <button>Sign Up</button>
+
+        </form>
+        <form id="logIn">
+            <input type="email" placeholder="enter your mail"  id="enteredmail" required><br>
+            <input type="password" placeholder="enter your password" id="enteredpassword" required><br>
+            <button>Log In</button>
+
+        </form>
+    </div>
+    </div>
+</body>
+<script src="./login.js"></script>
+</html>
