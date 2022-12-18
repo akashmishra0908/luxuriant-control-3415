@@ -6,384 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
-    <style>
-       
-        .container {
-            background-color: white;
-            height: auto;
-            padding: 1px;
-        }
-
-        .nav {
-            width: 100%;
-            height: auto;
-            display: flex;
-            justify-content: space-between;
-            border-bottom:1px solid white ;
-            background-color: rgb(1, 25, 1);
-            position: sticky;
-            top: 0;
-        }
-
-        .nav>div:nth-child(1) {
-            width: 10%;
-            height: auto;
-            margin-left: 40px;
-        }
-
-        .nav>div:nth-child(2) {
-            width: 85%;
-            height: auto;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-        }
-
-        .nav>div:nth-child(2)>div {
-            width: 95%;
-            height: auto;
-            display: flex;
-            font-size: large;
-            justify-content: space-evenly;
-            margin: 10px;
-            color: white;
-        }
-        .nav>div:nth-child(2)>div>a{
-            padding: 7px;
-        }
-        .nav>div:nth-child(2)>div :hover{
-            background-color:rgb(3, 73, 3);
-            border-radius: 10px;
-        }
-
-        a {
-            font-size: 20px;
-            color: white;
-            text-decoration: none;
-        }
-
-        .explorePLateform {
-            height: auto;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-            background-color: rgb(2, 2, 48);
-
-        }
-
-        .explorePLateform>div {
-            width: 90%;
-            padding: 20px;
-            font-size: 20px;
-            color: white;
-        }
-
-        .logoSection {
-            width: 85%;
-            margin: auto;
-            height: auto;
-        }
-
-        .logoSection>div {
-            height: auto;
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            gap: 10px;
-            padding: 40px;
-        }
-
-        .logoSection>div+p {
-            text-align: center;
-        }
-
-        .cardSection {
-            width: 95%;
-            margin: auto;
-            height: auto;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            padding-top: 10px;
-        }
-
-        .cardSection>div {
-            width: 90%;
-            padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        }
-
-        .getBtn {
-            width: 15%;
-            margin: auto;
-            padding: 40px;
-        }
-
-        .getBtn>button {
-            width: 100%;
-            margin: auto;
-            height: 70px;
-            padding: 5px;
-            color: white;
-            background-color: rgb(13, 188, 13);
-            border: 0px;
-            font-size: large;
-            border-radius: 10px;
-        }
-
-        .giftSection {
-            display: grid;
-            width: 100%;
-            grid-template-columns: repeat(2, 1fr);
-            background-color: rgb(2, 2, 48);
-
-        }
-
-        .giftSection>div {
-            width: 95%;
-            color: white;
-            margin: 10px;
-        }
-
-        .CustomizableDashboards {
-            background-color: rgb(5, 5, 79);
-            height: auto;
-            padding: 10px;
-        }
-
-        .CustomizableDashboards>div:nth-child(1) {
-            width: 80%;
-            margin: auto;
-            color: white;
-            text-align: center;
-        }
-
-        .CustomizableDashboards>div:nth-child(2) {
-            width: 70%;
-            margin: auto;
-            color: white;
-            padding: 20px;
-            display: flex;
-            text-align: center;
-            justify-content: space-evenly;
-            border-bottom: 1px solid white;
-            font-size: 25px;
-
-        }
-
-        .CustomizableDashboards>div:nth-child(3) {
-            width: 80%;
-            margin: auto;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-            margin: 10px;
-            color: white;
-            padding: 50px;
-            font-size: 18px;
-
-        }
-
-        .CustomizableDashboards>div:nth-child(3)>div:nth-child(1) {
-            width: 90%;
-        }
-
-        .CustomizableDashboards>div:nth-child(3)>div:nth-child(2) {
-            width: 70%;
-        }
-
-        .security {
-            background-color: white;
-        }
-
-        .security>div:nth-child(1) {
-            display: flex;
-            width: 95%;
-            padding: 10px;
-            margin: auto;
-        }
-
-        .Integrate {
-            background-color: rgb(126, 161, 161);
-            padding-top: 20px;
-            text-align: center;
-        }
-
-        .Integrate>div:nth-child(1) {
-            color: white;
-        }
-
-        .Integrate>div:nth-child(2) {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            width: 90%;
-            margin: auto;
-
-        }
-
-        .Integrate>div:nth-child(2)>div {
-            background-color: white;
-            height: 200px;
-            width: 90%;
-            border-radius: 10px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        }
-
-        .support {
-            background-color: rgb(5, 5, 79);
-            width: 100%;
-            height: auto;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-        }
-
-        .support>div {
-            width: 95%;
-            color: white;
-            padding: 20px;
-            font-size: 17px;
-        }
-
-        .free {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-
-        }
-
-        .free>div:nth-child(1) {
-            width: 60%;
-        }
-
-        .free>div:nth-child(2) {
-            width: 100%;
-            padding: 10px;
-        }
-
-        .free>div:nth-child(3) {
-            width: 60%;
-        }
-
-        .footer {
-            background-color: #0c3245;
-            padding: 10px;
-        }
-
-        .footer>div:nth-child(1) {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-            color: white;
-            padding: 10px;
-        }
-
-        .getBtn>button:hover {
-            cursor: pointer;
-        }
-        .why{
-           display: grid;
-           grid-template-columns: repeat(4,1fr);
-            background-color:#0c3245;
-            color: white;
-            padding: 10px;
-            display: none; 
-        }
-        .teams>div{
-            display: flex;  
-            justify-content: space-evenly;
-            padding: 15px;
-            
-    }
-    .teams>div:hover{
-        background-color:#033954;
-        border-radius: 10px;
-        cursor: pointer;
-    }
-    .cases>div:hover{
-        background-color:#033954;
-        border-radius: 10px;
-        cursor: pointer;
-    }
-    .apps>div:hover{
-        background-color:#033954;
-        border-radius: 10px;
-        cursor: pointer;
-    }
-    .explore>div:hover{
-        background-color:#033954;
-        border-radius: 10px;
-        cursor: pointer;
-    }
-        .cases>div{
-            display: flex;
-            justify-content: space-evenly;
-            padding: 10px;
-        } 
-        .apps>div{
-             display: flex;
-            justify-content: space-evenly;
-            padding: 10px;
-        }
-        .explore>div{
-            display: flex;
-            justify-content: space-evenly;
-           padding: 20px; 
-            color: lightgreen;
-        }
-        .bottam{
-            height: auto;
-            display: flex;
-            justify-content: space-evenly;
-            border-top: 1px solid white;
-            padding: 10px;
-        }
-        .bottam>div{
-            width: 30%;
-            height: auto;
-        }
-        .bottam>div:nth-child(1){
-            display: flex;
-            justify-content: space-evenly;
-        }
-        .bottam>div:nth-child(2){
-            display: flex;
-            justify-content: space-evenly;
-            color: white;
-            padding: 15px;
-        }
-        .bottam>div:nth-child(2)>img{
-            width:10%;
-            border-radius: 30%;
-        }
-        .bottam>div:nth-child(3){
-            color: white;
-            padding: 5px;
-        }
-          
-
-    </style>
+    <link rel="icon" style="border-radius: 50%;" type="image" href="./wrikeicon.png">
+    <link rel="stylesheet" href="./index.css">
 </head>
 
 
 <body>
     <div class="nav">
         <div>
-            <img src="https://web-static.wrike.com/tp/static/assets/img/header-v2/wrike-logo-dark.svg" alt="">
+            <a href="./index.html"><img src="https://web-static.wrike.com/tp/static/assets/img/header-v2/wrike-logo-dark.svg" alt=""></a>
         </div>
         <div>
             <div>
                 <a onclick="whyAk()">Why Akrike?</a> 
                 <a  onclick="features()">Features </a>
                 <a  onclick="resources()">Recources </a>
-                <a href="">Pricing</a>
+                <a href="./pricing.html">Pricing</a>
             </div>
             <div>
                 <a href="">Contact Sales</a>
                 <a href="">En</a>
-                <a href="" style="color: rgb(38, 231, 38);">Log in</a>
+                <a href="./login.html" style="color: rgb(38, 231, 38);">Log in</a>
             </div>
+        </div>
+        <div id="burger">
+            <a href="./burger.html"><img width="45%" src="https://t4.ftcdn.net/jpg/03/05/87/61/240_F_305876177_4EzB8UJafxNruTRjfLgc57mb07Qn1cNv.jpg" alt=""></a>
         </div>
     </div>
     <div class="container">
@@ -398,9 +45,9 @@
                 </h1>
                 <p>Anything is possible with the most powerful work management software at your fingertips.</p>
                 <div>
-                    <input type="text" style="width: 70%;height: 40px;text-align: center;border-radius: 10px;"
+                    <input id="mailINput" type="mail" style="width: 70%;height: 40px;text-align: center;border-radius: 10px;"
                         placeholder="Enter your Bussiness Email">
-                    <button
+                    <button id="mailBtn"
                         style="color: white;background-color: rgb(10, 148, 10);width: 25%;height: 40px;border-radius: 8px;">Get
                         Started</button>
                     <p style="color: rgb(9, 201, 9);padding: 10px;">Explore Our new PLateform</p>
