@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,34 +9,296 @@
     <link rel="icon" style="border-radius: 50%;" type="image" href="./wrikeicon.png">
     <link rel="stylesheet" href="./pricing.css">
 </head>
+
 <body>
     <div class="nav">
         <div>
-            <a href="./index.html"><img src="https://web-static.wrike.com/tp/static/assets/img/header-v2/wrike-logo-dark.svg" alt=""></a>
+            <a href="./index.html"><img
+                    src="https://web-static.wrike.com/tp/static/assets/img/header-v2/wrike-logo-dark.svg" alt=""></a>
         </div>
         <div>
             <div>
-                <a onclick="whyAk()">Why Akrike?</a> 
-                <a  onclick="features()">Features </a>
-                <a  onclick="resources()">Recources </a>
+                <a onclick="whyAk()">Why Akrike?</a>
+                <a onclick="features()">Features </a>
+                <a onclick="resources()">Recources </a>
                 <a href="">Pricing</a>
             </div>
             <div>
-                <a href="">Contact Sales</a>
-                <a href="">En</a>
+                <a href="./index.html">Contact Sales</a>
+                <a href="./index.html">En</a>
                 <a href="./login.html" style="color: rgb(38, 231, 38);">Log in</a>
             </div>
         </div>
         <div id="burger">
-            <a href="./burger.html"><img width="45%" src="https://t4.ftcdn.net/jpg/03/05/87/61/240_F_305876177_4EzB8UJafxNruTRjfLgc57mb07Qn1cNv.jpg" alt=""></a>
+            <a href="./burger.html"><img width="45%"
+                    src="https://t4.ftcdn.net/jpg/03/05/87/61/240_F_305876177_4EzB8UJafxNruTRjfLgc57mb07Qn1cNv.jpg"
+                    alt=""></a>
         </div>
     </div>
+    <div class="box">
+        <div class="plans">
+            <div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJ4AAABXCAMAAADCvAw1AAAAP1BMVEX////H4e/D3+76/P3r9PnL4/DT5/L2+vzm8ff09/nv9vq/6Ozi7/bP5fHY6vPq8vXa6/DR6uzH6ezq9vfe8/Uq1YnVAAAC4ElEQVRoge2a7XIqIQyGXb4XgVq393+tJWGr23FWIWrgnOnbP3VcZh8TEiDhcPjTfy7ZG+CuZFZvhn1lOGuH5rPzPDBfphuZT87j8/kP2xtjVzLTfQzMZ1XGcwPzAd5pYD6XFebeGLuywbnTyffG2JU9gcblm5Fv6Y2xq3+C73Nkvs+scfkWwDuPy+cH51vOWcc/PqqW4/l4HJoP9NUbY1fL2/GsCsnEGE0Kqn0dXd7pXKnMJPIfSoj8r2ndai5vs53PbCvaVWIy6l0vbJGKG7aLCfGDdr3hrLm4VMeUggswAy9+1n13c6GAZE+GTV1CWpyL+E3qBydjgdPhNg6ki8WCutdxx64W2pthShf6PiHiH3svTN34fDHd/blvNfLxR7BFOv2wjoORzW4/iVYxFU8m5GNOMLqWbuV7bOZXCl8ZKx82YOm6n/Ia2TaDaObpp9umk62LoldJZeOJ0DDATY0DnhIYTzeNwAWOyXyQkBunkm+19xMyzcYr5msdQ5MUhGUKzceSmx28qXWQhPnKsvdLpCSbmLwLdiBsQWawOUPsWtp70LsMKwfk5IkwDmKXIbUEQVvfE09sJOLxi/qzGmWIToJ8VLsFe0LmztnsniAxM2QWKt5MDKlGUZ3LaD0KnuKZe9TIdTyRS857giXvKcqG5UCfFI0afM2VtKIJ7lg4ammGtHhiseoNNDci7ZbhdMdTKR38rEE6qRku39LOuRNPWkG1VwkMY5WgvcbSPOA5YcW4PolJ3gpVKXvXuzdSYv0ZpfrabXmYtTq6FiDr0qwTnHFRZKsbZqFHZb5Mvwr/lr4Bf9+l+OxBQ89iWZQxp1ylxMNXO2wKdqGDlUrcbSn72K/jB7JrRzSq27iUPq4t8X4NcZnWnrdOfksofdLrN6br5W6vf64NTDEFp5RyIW3uEnS/jeF+APEGi/h1ZSSMcC/exS3ShXVyI8CBbIDLLJvrLEKHwS78+usdKreL9g25jBTYNudpkAAAAABJRU5ErkJggg=="
+                    alt="">
+            </div>
+            <div>
+                <h1>Plans for Every Team</h1>
+            </div>
+            <div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJsAAABXCAMAAAAklcdxAAAARVBMVEX///+Hh4e9vLyEhISBgYG5uLj8/Px+fn739/fV1dXk5OTAv7/t7e2ampqPj4/z8/PIyMjOzs6np6etra3d3d14eHigoKBZPip9AAADvElEQVRogc2b23LjIAyGY3My4APUTt7/URdjGwRxnOyFBf90prPTXnyVkH4Jso/HN3WLnoexaZpxmM3Sff19NHE7UEpJ40UIFWLUfWkor6kNXEGOb5ClwR5cE9qcidBhKYumxnOyjW4uefDMWzYT0bFY6Pgsrsh8YdgyaN3rcz6DhK4WrQwc/w3NweGn9Ve0pnkqZDS2ozkb2EQuKpajotm1QlesYdZylZkH989zNDpjovXC25JJssUXRsRp9ARmmxvpc7BnTV8OZy2PjHho+smmTz9bzlxMoBk/b68ON5+fRQN3LfmeV9QTdyn1llbyV5opSL2VK/l4QNEl88ihOxef+kVaY+Wipqw8WAaHnNReGsZYu8p917aHeHzI0joizsDK7FxBzChAl9cDRXP83mRgGx1c/f7SwAmDhGbPyDxdNIAscATH8Cf9CW0NXThXryRw5IWC9pnM64CzSeDIgDDFfUNrD7edshZ3f/f9jtYe20taDeT2KxKuv6KFgjBJUsXtbPY7moPbMJRAZVOHD7TaOOk2b8Cbtl6WHri72TrPpa2zT3/gOZ+Ubd/xmDeB1LfuZrMOTOa2ztW7SWyB+0Nk61PLjFJ57JhvcjNko/ey2XOyx3qtmsIxP4O3SaHe2t/4VWdfUjifVA3ZMIekazi9/h0WNBEUz/ooCeH8Agubb+FtxuRdBOaUsqJs0Gp9McBawFvtzwUNbUWBPeTmFvJVPQjcuvPB3luyTFfBIcWmnoU0kl/IJmzQ6wvc+mZSDLLBGUkUv3MAB87VgolsZTuvV5ewgVKgRZ5AUjbY37oRbUD6T7b+scTOi7Oc/srmttQ5spU2hZRNJylFfv04Zwu1YOGtbwWVAHqIG0OAKYgaPvgQei/j4Bqp8Hi0K4yXGja3KsIW/XSBYWtLY63qdEgpuHwTpbG8QikY0HfLTyBex3FjKhYpGUpTefFjmdFgwarASVdNofFGQ6ii7T5iSvWrtozGbQG+F9WR0WAKOpo8reXZdK8EHWejOrquU39UQoxaNQ+6Ji8EWn5/2XV4AjvQSOlNPkpnhUDG4hvpof1mMGS0IrR9GNfHzRGtJ6FHIbDqyiC61X7YRPFLo6jDEcYto2jP3z9obx96G9pog/05wQtNsOkSUfQDx5kOr/JRo2MFtwtBCqDRpq0oaHvP1cyVAW1YJdOaV7c9sem5IZWR8WUrgnYQdDTVeNTD/zcU5sletJnLt40uOFGn7PZSz14Dq2PwVtJK6770CuY/UCArSmWnpPGjmpGqCqx/PQMlERzHdO8AAAAASUVORK5CYII="
+                    alt="">
+            </div>
+        </div>
+        <div class="offer">
+            <div>
+                <h1>Free</h1>
+                <h4>For teams getting started</h4>
+                <p>Centralized task management</p><br><br>
+                <h1>$0 <sup>user/ month</sup></h1><br><br>
+                <button>Get Started</button>
+            </div>
+            <div>
+                <h1>Team</h1>
+                <h4>For growing teams</h4>
+                <p>Effective team management</p>
+                <br><br>
+                <h1>$9.80 <sup>user/ month</sup></h1>
+                <button>Get Started</button>
+            </div>
+            <div>
+                <h1>Business</h1>
+                <h4>For all teams across an organization</h4>
+                <p>Customized platform for any team or use case</p>
+                <h1>$24.80 <sup>user/ month</sup></h1><br>
+                <button>Get Started</button>
+            </div>
+            <div style="background-color: rgb(167, 222, 204);">
+                <h1>Enterprise</h1>
+                <h4>For large teams</h4>
+                <p>Enterprise-grade security and scalability</p><br><br>
+                <h1 style="border: 1px solid black;text-align: center;padding: 5px;border-radius: 10px;">contact us</h1>
+                <br>
+                <button>Get Started</button>
+            </div>
+            <div style="background-color: rgb(167, 222, 204);">
+                <h1>Pinnacle</h1>
+                <h4>For teams with complex work needs </h4>
+                <p>Advanced tools and analytics for complex work</p><br><br>
+                <h1 style="border: 1px solid black;text-align: center;padding: 5px;border-radius: 10px;">contact us</h1>
+                <button>Get Started</button>
+            </div>
+        </div>
+        <div class="compare">
+
+            <div>
+                <h1>Compare features across our plans</h1>
+                <h3>Take a Closer look</h3>
+            </div>
+        </div>
+        <div>
+            <p>The pricing outlined herein is valid only as to new purchases occurring on or after October 25, 2022, and
+                is not offered and does not apply to any prior purchases. <br><br> Wrike reserves the right to adjust
+                its packaging and pricing at any time. <br> <br>
+
+                Amount shown is price per month and billed on an annual per user basis.</p>
+        </div>
+        <div class="logoSection">
+            <div>
+                <div><img
+                        src="https://web-static.wrike.com/tp/storage/uploads/3b19367a-9020-408b-8af7-5e89773b8d4b/1440-logoroll-logo-google.svg"
+                        alt=""></div>
+                <div><img
+                        src="https://web-static.wrike.com/tp/storage/uploads/17e81db2-0802-47a7-8037-8cb11d166299/1440-logoroll-logo-syneos.svg"
+                        alt=""></div>
+                <div><img
+                        src="https://web-static.wrike.com/tp/storage/uploads/3b19367a-9020-408b-8af7-5e89773b8d4b/1440-logoroll-logo-lyft.svg"
+                        alt=""></div>
+                <div><img src="https://web-static.wrike.com/tp/storage/uploads/1440-logoroll-logo-siemens.svg" alt="">
+                </div>
+                <div><img
+                        src="https://web-static.wrike.com/tp/storage/uploads/473c0f49-59e8-4422-89d7-184c44f362cf/1440-logoroll-logo-nickelodeon.svg"
+                        alt=""></div>
+                <div><img
+                        src="https://web-static.wrike.com/tp/storage/uploads/3b19367a-9020-408b-8af7-5e89773b8d4b/1440-logoroll-logo-oglivy.svg"
+                        alt=""></div>
+                <div><img src="https://web-static.wrike.com/tp/storage/uploads/1440-logoroll-logo-snowflake.svg" alt="">
+                </div>
+            </div>
+            <p>TRUSTED BY 20,000+ ORGANIZATIONS WORLDWIDE</p>
+        </div>
+        <div class="features">
+            <div>
+                <h1>Add-on Features</h1>
+                <p>An add-on is a set of premium features that you can add to your Wrike account for an additional fee.
+                    Enhance your plan to unlock more value for your team.</p>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="https://web-static.wrike.com/tp/storage/uploads/4e08805a-a80b-42cf-8ac3-b8ec8a4b24ab/brandevo-icon-intergrations-inverse.svg"
+                            alt="">
+                    </div>
+                    <div>
+                        <h3>Wrike Integrate</h3>
+                        <p>Create Custom integrations and automations with 400+ cloud on-premises applications.</p><br>
+                        <p>Learn More</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://web-static.wrike.com/tp/storage/uploads/4e08805a-a80b-42cf-8ac3-b8ec8a4b24ab/brandevo-icon-intergrations-inverse.svg"
+                            alt="">
+                    </div>
+                    <div>
+                        <h3>Wrike Integrate</h3>
+                        <p>Create Custom integrations and automations with 400+ cloud on-premises applications.</p><br>
+                        <p>Learn More</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://web-static.wrike.com/tp/storage/uploads/4e08805a-a80b-42cf-8ac3-b8ec8a4b24ab/brandevo-icon-intergrations-inverse.svg"
+                            alt="">
+                    </div>
+                    <div>
+                        <h3>Wrike Integrate</h3>
+                        <p>Create Custom integrations and automations with 400+ cloud on-premises applications.</p><br>
+                        <p>Learn More</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://web-static.wrike.com/tp/storage/uploads/4e08805a-a80b-42cf-8ac3-b8ec8a4b24ab/brandevo-icon-intergrations-inverse.svg"
+                            alt="">
+                    </div>
+                    <div>
+                        <h3>Wrike Integrate</h3>
+                        <p>Create Custom integrations and automations with 400+ cloud on-premises applications.</p><br>
+                        <p>Learn More</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="footer">
+            <div>
+                <div>
+                    <p>Product</p><br>
+                    <p>Product Tour</p>
+                    <p>Pricing</p>
+                    <p>Templates</p>
+                    <p>Apps & Integrations</p>
+                    <p>Task management</p>
+                    <p>Gantt charts</p>
+                    <p>Wrike status</p>
+                    <p>Security</p>
+                    <p>CA Notice at Collection </p>
+                    <p>API</p>
+                </div>
+                <div>
+                    <p>Solutions</p><br>
+                    <p>All Teams</p>
+                    <p>Marketing</p>
+                    <p>Creative</p>
+                    <p>Project Management</p>
+                    <p>Product Development</p>
+                    <p>Bussiness Operations</p>
+                    <p>Professional Services</p>
+                    <p>Students</p>
+                </div>
+                <div>
+                    <p>Resources</p><br>
+                    <p>Help Centre</p>
+                    <p>Community</p>
+                    <p>Webinars</p>
+                    <p>Interactive Training</p>
+                    <p>Support</p>
+                    <p>Google project management tools</p>
+
+                </div>
+                <div>
+                    <p>Company</p><br>
+                    <p>About Us</p>
+                    <p>Careers</p>
+                    <p>Our Customers</p>
+                    <p>Blog</p>
+                    <p>Newsroom</p>
+                    <p>Partner program</p>
+                    <p>User Conference</p>
+                    <p>Contact Us</p>
+                </div>
+                <div>
+                    <p>Guides</p><br>
+                    <p>Project management Guide</p>
+                    <p>Kanban Guide</p>
+                    <p>Remote work Guide</p>
+                    <p>Marketing Project Management Guide</p>
+                    <p>Product Management Guide</p>
+                    <p>Go-To-Market Guide</p>
+                </div>
+                <div>
+                    <P></P><br>
+                    <br><br>
+                    <P>Professional Service guide</P>
+                    <P>Agile Guide</P>
+                    <P>Return to Work Guide</P>
+                    <P>Scrum Guide</P>
+                    <P></P><br>
+                    <P>Digital Marketing Guide</P>
+                    <P>Collaborative Work Management Guide</P>
+                </div>
+                <div>
+                    <p>Latest in wrike Blog</p><br>
+                    <p>Effectively Delegating Tasks:Best Practices</p>
+                    <p>New! Space Workflows:Automate Team,Cross-Fundamental,& Company-Wide Workflows with wrike</p>
+                    <p>What is RACI chart? Defination & use</p>
+                    <p>The Ultimate Guide to Virtual Event Planning</p>
+                    <p>Why Your Operations Team Needs a Sales Tracker</p>
+                    <p>Simple Cost Comparison Templets & How-To-Guide</p>
+                    <p>Event Management:How an Event Coordinator Can streamline Your Event planning in 2023 </p>
+                </div>
+            </div>
+            <div class="bottam">
+                <div>
+                    <img width="40%" src="https://web-static.wrike.com/tp/static/assets/img/footer/apple_en.svg" alt="">
+                    <img width="40%" src="https://web-static.wrike.com/tp/static/assets/img/footer/google_play_en.svg"
+                        alt="">
+                </div>
+                <div>
+                    <img src="data:image/png;base64,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 "
+                        alt="">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAAB/CAMAAADxY+0hAAAAYFBMVEUEAgT///8AAAB1dXW0tLTHxsf4+PiKiYo6OzojIyPy8vLJycltbW1ycnIxMTGtrq3Z2dlgYGDo6OiWlpZ/f38LCwtDRENTVFO9vr0XGRcdHB2enp5IR0ikpKRnZ2c/Pz9LYBjEAAABiUlEQVRoge3bW3OCMBAFYFgwKAS8gK2i1v//L4u247QNZCKyuzPlnNfM5HsAksMtKmyiF1tEKWkm7fxIL/Dhw4cPHz78sZO4EfNv2L56e9/aLuUtXatp9qFzvuZ3dlWuN7vcmPhXViI+0fmQx30R8el46MWFfLJmiJfwqRnUJXzaenh+n1Y7XX/t49l9Wg6feyJ+7eX5fe/RZ/ep9fPsvvfiE/ATZT9T9k8uaermniQpS8u8/9PF4fOzYP/p8S8jd7Gp/JOo767+2n4t6qeOn83Kd4unpE89fiPqLxw/UfZLCf+xvBaOb0ctv8/55PG3/Pe/tIzNdxw+fgzdh1n2384Pzcx9c9T1dyz9J9zfBF8APP5C2X9iSWHx18p+eBni8cPLAI//oexflf2Wx796SJP/CNP+2yblV+zG8bNq+UjF3j/6+teY+vN/+id8+PDhw4cPHz58+PDhw4cPHz58+PDhT+O7738l/Yhs9id1+CP/CfxXvviexJ8s8OHDhw8f/mx9zaSR8v/vn2tMIOWxVu8PAAAAAElFTkSuQmCC"
+                        alt="">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJ4AAACeCAMAAAD0W0NJAAAAbFBMVEUAAAD///8rKyv19fXHx8fY2Njw8PAkJCTExMTo6OgfHx/V1dXr6+v8/PxXV1eysrIJCQm4uLhKSkowMDA7OztoaGienp4YGBjf39++vr59fX13d3eOjo6rq6vNzc1vb2+WlpaFhYVCQkJgYGAisRBkAAADPklEQVR4nO2d63aqMBBGQQoKchGriBYR9f3fsWqPR4UZEgxNsla//beZsE0DmVxEx3WDLF041rFIs8B1HTdMTZtwpKHrBNbaXfwCJzPt0EfmWNx4l+ZzLLwrHlgtBwAAAAAA/ibHMG4R5hvTUv+ZuQTlyrTWP9aUnevaMqXb0nrx1LTYDx+0njcxLfYD9FSAngrQUwF6KkBPBeipYLkek1AFliRUX7RebtrrTk3ZhSfTWneiIkhaeLUtUw0AAAB/gyiaTibTyMIt5Mmh2m/reu7P63q2L76WatUtohbM4uNGotTmVJRB8pJeJF64Xb+dn22qOmzh7z+75aLGfy1V5p1mSZuSzs9cLzu8p5dTtc27fnMi7Xr1i2YBI3drxPKdYyAHurJOOlpQpcqnAicm737+OOvBemTjXWpqdxai8S48+l8VC+0uLTh4TVh2KuSTxe59YEXbE/UOvI1H0fvq63Stinfa9Y4J+UeGQR1wBD2m+3J4Q/zU9ch7uo9gwEinprca3HZXal16Bycbbue68reHmp4nf8s+40uv4KjpvcvRbr3Qbj3ph58hPdkVsFH1Yj+vzsvVcr2vBRlCSWSUv6znV0/j/bLiMtMbieR/dzS9+NzK7qOibyhutOol1OUOHh8g2fnG0WOG+R3ffiUZ8Dt67MGNIxuS6NNL+BSYD4t06fUlcCkbJbd8PYLevqf6Dbnwf+WsSc/rrb/hwuSSKnW9qrf+lHu4NHr0AsHUkMsI+7rEiHqi5ys3A9ak1wguQJ5wk/hY4+glooUdbiKnRy8WXWDHBG616AnHTuaAoCa9D9EFzkzgTIteIboAN6zp0RM+/E9G9YRD5yeT8+nREy4nTozqCfMi6PF6iViPSVm06MXC6bRRvVC4FGZUr7RcT7iXBz1ez4eegt5cONmHHvSgBz3oQQ960IMe9KAHPehBD3p3ZE/eMnq18PUU05COlNu0YvaUOns2zNaYxL4ic55Z8gwfGe1312TJQz3ixnOcFdnwcntW17PwZdAizIkv+U2KsF2u3EsdEzzl3chG7iDGTXDaggmVLTdmJAAAAAAAANqw8MvGDxa2v4rclrf+kWS2vwbf8h8RsPsnGL4Bq/w9auE9nmMAAAAASUVORK5CYII="
+                        alt="">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHoAAAB6CAMAAABHh7fWAAAAY1BMVEUAAAD////a2tr6+vrOzs739/c9PT3X19f09PQyMjJsbGwjIyNXV1fi4uKWlpakpKR2dnaqqqp9fX2Dg4O1tbW7u7sPDw/Hx8dCQkIsLCwbGxvs7Ow3NzdRUVFISEicnJyNjY1I7hLrAAABuklEQVRoge3X4Y6iMBQF4B5AKdACBcFRxl3e/ylXR0UwIJNZb7PZnO+PyEVPSktblCIiIiIiIiIiIiL6gTZt4mBWvK8zyWRjAYTzAF3JJaeA+7VUTHKgkEo20NuXF1j0MsmtxetkpfTqFT+Twi3WsjK9fJQvLvkbDRb7+dgBzeUgtCLRMRZLv88DH+Z8EHSJRHQQLpaKe3S0Eens5+isyvP62shW3264l+j0Mruc2fLra2WUp+h2j7ApPz7KZoNoNIHKR7cxmtt4OjSwj2z56P14yswR+Ysur2Pqbodh3RCPtpvJ05vpzlf0Ydpopdwwz0lH1yinFYPeU3T+vD4lw6j7j6NrpNOKQe4peovdtOJw8hStOn0YF46dvh+KR1fTZjv03qJVNHTuWY/gURCPPli425pxdOg+PUarQ4zOmSQ5uQ7BI9nPVqHW162C7sdnPW2QTnlR5GZ6zlP0HKHo+BvRsRbZDO+x/rfathLR9fhhnmeeV/I3yfTqHQ+GyfzNKqy8Ue2e15X3KaDL5aoJEEslX6ZrhEE0K76/+0jZOqs3s7RthPr5IdnO+lz/JREREREREREREf3L/gBAExB9DIzBQQAAAABJRU5ErkJggg=="
+                        alt="">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAIQAYAMBIgACEQEDEQH/xAAaAAEBAQADAQAAAAAAAAAAAAAAAQIEBQYH/8QALRAAAQMDAgQEBgMAAAAAAAAAAAECEQMEBQYhEhMxYRRRcYEHQZGhsbIWIzL/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/APiEiSAKsiSACyJIALIkgAsiSACyJIAIAABYIUBCiFAAQohQAEKQpAAAAAAAUhQAAAAAAQpAAAAAAAaUyaUCA7/TGLsLm1yeUy/PdY45lNXUbdyNfVe93C1vEvRNlVV7HMp5HS9RXpb6Qu6yMarnKuUeqo1OqrDNk7geUB6dMvpJyw7Sdw1PNmVdP3YcfU2Mx9CyxmWw/PZZZBtSKFw5HPovpuRHN4k6puip6gdAhCoQAAAAAAGl6mTShHpsHP8ABNUR8q9j+1Q5fwyvPCXuY4Mnb424qY5zaFzXfwta7mMX32RdvmdPpzNUMZTvbPIWjrvHXzGtr0mVOW9Fa7ia5rt4VF9lk5y1NDOWVttRU+za9F35aFNcZLCZCtbriLdq3TEXxd7So+Hp3LvNtKV4fXafIZZUT4faeRf9LeXit9P6ycehmrKW+on9nV6DZ+jTh6jzVvkqVjZY60daY6wY9tCnUqcx7nPWXOc6E3VY6JtAR0iEKhAoAAAAAGl6mTShEAAUAAAhSAAAABQBDSkLsBAXYbAQF2GwEIa2IBAUAIEGgBmBBoAZgQaAGYEGgBmBBoAZgQaAAAAAAAAAAAAAAAAAH//Z"
+                        alt="">
+                </div>
+                <div>
+                    <p>
+                        ©2006-2022 Wrike, Inc. All rights reserved. Patented. Privacy Policy. Terms of Service. Cookie
+                        Preferences
+
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
     <div class="why">
         <div class="teams">
             <p>For Teams</p>
             <div>
                 <div>
-                    <img width="150%" src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-marketing.svg" alt="">
+                    <img width="150%"
+                        src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-marketing.svg"
+                        alt="">
                 </div>
                 <div>
                     <h3>Marketing</h3>
@@ -45,7 +308,9 @@
             </div>
             <div>
                 <div>
-                    <img width="150%" src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-case.svg" alt="">
+                    <img width="150%"
+                        src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-case.svg"
+                        alt="">
                 </div>
                 <div>
                     <h3>Professional Service</h3>
@@ -55,16 +320,21 @@
             </div>
             <div>
                 <div>
-                    <img width="150%" src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-project-1.svg" alt="">
+                    <img width="150%"
+                        src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-project-1.svg"
+                        alt="">
                 </div>
                 <div>
                     <h3>Project managers</h3>
                     <p>Streamline proofing and reporting for seamless campaigns</p>
                 </div>
 
-            </div> <div>
+            </div>
+            <div>
                 <div>
-                    <img width="150%" src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-palette.svg" alt="">
+                    <img width="150%"
+                        src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-palette.svg"
+                        alt="">
                 </div>
                 <div>
                     <h3>Creative & Design</h3>
@@ -78,7 +348,9 @@
             <p>use cases</p>
             <div>
                 <div>
-                    <img width="150%" src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-dependency.svg" alt="">
+                    <img width="150%"
+                        src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-dependency.svg"
+                        alt="">
                 </div>
                 <div>
                     <h3>Workflow Management</h3>
@@ -88,7 +360,9 @@
             </div>
             <div>
                 <div>
-                    <img width="150%" src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-board.svg" alt="">
+                    <img width="150%"
+                        src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-board.svg"
+                        alt="">
                 </div>
                 <div>
                     <h3>Task Management</h3>
@@ -98,7 +372,9 @@
             </div>
             <div>
                 <div>
-                    <img width="150%" src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-pie-chart.svg" alt="">
+                    <img width="150%"
+                        src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-pie-chart.svg"
+                        alt="">
                 </div>
                 <div>
                     <h3>Project Tracking</h3>
@@ -108,7 +384,9 @@
             </div>
             <div>
                 <div>
-                    <img width="150%" src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-folder.svg" alt="">
+                    <img width="150%"
+                        src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-folder.svg"
+                        alt="">
                 </div>
                 <div>
                     <h3>Resource Management</h3>
@@ -121,7 +399,9 @@
             <p>Apps & Integrations</p>
             <div>
                 <div>
-                    <img width="150%" src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-inregration-slack.svg" alt="">
+                    <img width="150%"
+                        src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-inregration-slack.svg"
+                        alt="">
                 </div>
                 <div>
                     <h3>Slack</h3>
@@ -131,7 +411,9 @@
             </div>
             <div>
                 <div>
-                    <img width="150%" src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-inregration-salesforce.svg" alt="">
+                    <img width="150%"
+                        src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-inregration-salesforce.svg"
+                        alt="">
                 </div>
                 <div>
                     <h3>Sales Force</h3>
@@ -141,7 +423,9 @@
             </div>
             <div>
                 <div>
-                    <img width="150%" src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-inregration-microsoft-teams.svg" alt="">
+                    <img width="150%"
+                        src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-inregration-microsoft-teams.svg"
+                        alt="">
                 </div>
                 <div>
                     <h3>Microsoft Team</h3>
@@ -151,7 +435,9 @@
             </div>
             <div>
                 <div>
-                    <img width="150%" src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-inregration-adobe.svg" alt="">
+                    <img width="150%"
+                        src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-inregration-adobe.svg"
+                        alt="">
                 </div>
                 <div>
                     <h3>Adobe</h3>
@@ -164,7 +450,9 @@
             <p>Explore Akrike</p>
             <div>
                 <div>
-                    <img width="100%" src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-check.svg" alt="">
+                    <img width="100%"
+                        src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-check.svg"
+                        alt="">
                 </div>
                 <div>
                     <h3>Book a Demo</h3>
@@ -173,7 +461,9 @@
             </div>
             <div>
                 <div>
-                    <img width="100%" src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-items.svg" alt="">
+                    <img width="100%"
+                        src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-items.svg"
+                        alt="">
                 </div>
                 <div>
                     <h3>Take a Product Tour</h3>
@@ -182,7 +472,9 @@
             </div>
             <div>
                 <div>
-                    <img width="100%" src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-layers.svg" alt="">
+                    <img width="100%"
+                        src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-layers.svg"
+                        alt="">
                 </div>
                 <div>
                     <h3>Start with Templates</h3>
@@ -191,7 +483,9 @@
             </div>
             <div>
                 <div>
-                    <img width="100%" src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-heart.svg" alt="">
+                    <img width="100%"
+                        src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-heart.svg"
+                        alt="">
                 </div>
                 <div>
                     <h3>Customers Service</h3>
@@ -200,7 +494,9 @@
             </div>
             <div>
                 <div>
-                    <img width="100%" src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-pie-chart-1.svg" alt="">
+                    <img width="100%"
+                        src="https://web-static.wrike.com/tp/storage/uploads/62538033-1d86-410b-bef8-73a09a6c52be/icon-header-tab1-pie-chart-1.svg"
+                        alt="">
                 </div>
                 <div>
                     <h3>ROI Calculator</h3>
@@ -209,6 +505,8 @@
             </div>
         </div>
     </div>
+
 </body>
 <script src="./pricing.js"></script>
+
 </html>

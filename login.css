@@ -4,13 +4,11 @@
     background-color: white;
     display: flex;
     height: auto;
-    justify-content: space-evenly;
-    background-color: lightgreen;
     
 }
 
 .contanier>div{
-    width: 48%;
+    width: 100%;
 }
 .nav {
     width: 100%;
@@ -69,19 +67,21 @@ a {
     padding-top: 40px;
     padding-bottom: 10px;
     height: auto;
-    background-color: rgb(1, 1, 26);
+    background-color:white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
     border-radius: 20px;
 }
 .contanier>div:nth-child(1){
-    padding-left: 130px;
-    margin-top: 150px;
+    padding:30px;
+    margin-top: 150px;;
 }
 img{
     width: 100%;
     border-radius: 20px;
 }
 .contanier>div:nth-child(2) input{
-   margin: 15px;
+   margin: 20px;
    width: 70%;
    height: 40px;
    border-radius: 10px;
@@ -90,16 +90,25 @@ img{
 button{
     border-radius: 10px;
     width: 20%;
-    height: 30px;
+    height: 40px;
+  text-align: center;
+  margin: 20px;
+  border: 0px;
+  color: white;
+  background-color: rgb(21, 21, 239);
     
 }
+button:hover{
+    cursor: pointer;
+}
+
 #logIn{
     display: none;
     padding: 50px;
 }
 @media all and (min-width:449px) and (max-width:999px) {
     .contanier>div:nth-child(2){
-        width: auto;
+        width: 100%;;
     }
     .nav>div:nth-child(2) {
         display: none;
@@ -108,10 +117,11 @@ button{
         #burger{
             display: block;
             width: 10%;
+            padding: 20px;
         }
     .contanier>div:nth-child(2) input{
         margin: 15px;
-        width: 70%;
+        width: 30%;
         height: 20px;
         border-radius: 10px;
         text-align: center;
@@ -119,11 +129,24 @@ button{
        button{
         width: 35%;
        }
+       .contanier>div:nth-child(1){
+        padding:20px;
+        margin-top:100px;
+    }
+    img{
+        width: 70%;
+        border-radius: 20px;
+    }
 }
 @media all and (min-width:100px) and (max-width:499px){
     .contanier{
         flex-direction: column;
         width: auto;
+    }
+    .contanier>div:nth-child(1){
+        padding-left:17px;
+        margin-top:100px;
+        width: 100%;
     }
     button{
         width: 35%;
@@ -134,19 +157,20 @@ button{
     }
     .nav>div:nth-child(2) {
         display: none;
-        
         }
+   
         #burger{
             display: block;
-            width: 10%;
+            width: 5%;
+            padding: 20px;
         }
     .contanier>div:nth-child(2) input{
-        margin: 15px;
-        width: auto;
-        height: 20px;
+        margin:5px;
+        width: 90%;
+        height: 25px;
+        margin-left:-10px;
         border-radius: 10px;
         text-align: center;
-        overflow: hidden;
-        z-index: 999999999999999;
        }
+       
     }

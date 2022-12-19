@@ -3,12 +3,13 @@
     height: auto;
     display: flex;
     justify-content: space-between;
-    border-bottom:1px solid white ;
+    border-bottom: 1px solid white;
     background-color: #fff;
     position: sticky;
     top: 0;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     color: black;
+    border-bottom: 2px solid black;
 }
 
 .nav>div:nth-child(1) {
@@ -32,101 +33,402 @@
     font-size: large;
     justify-content: space-evenly;
     margin: 10px;
-   color: black;
+    color: black;
 }
-.nav>div:nth-child(2)>div>a{
+
+.nav>div:nth-child(2)>div>a {
     padding: 15px;
 }
-.nav>div:nth-child(2)>div :hover{
-    background-color:rgb(3, 73, 3);
+
+.nav>div:nth-child(2)>div :hover {
+    background-color: rgb(3, 73, 3);
     border-radius: 10px;
     color: #fff;
+    cursor: pointer;
 }
 
 a {
     font-size: 20px;
-  color: black;
+    color: black;
     text-decoration: none;
 }
-#burger{
+
+#burger {
     display: none;
 }
 
-.why{
+.why {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-     background-color:#0c3245;
-     color: white;
-     padding: 10px;
-     display: none; 
- }
- .teams>div{
-     display: flex;  
-     justify-content: space-evenly;
-     padding: 15px;
-     
- }
- .teams>div:hover{
- background-color:#033954;
- border-radius: 10px;
- cursor: pointer;
- }
- .cases>div:hover{
- background-color:#033954;
- border-radius: 10px;
- cursor: pointer;
- }
- .apps>div:hover{
- background-color:#033954;
- border-radius: 10px;
- cursor: pointer;
- }
- .explore>div:hover{
- background-color:#033954;
- border-radius: 10px;
- cursor: pointer;
- }
- .cases>div{
-     display: flex;
-     justify-content: space-evenly;
-     padding: 10px;
- } 
- .apps>div{
-      display: flex;
-     justify-content: space-evenly;
-     padding: 10px;
- }
- .explore>div{
-     display: flex;
-     justify-content: space-evenly;
-    padding: 20px; 
-     color: lightgreen;
- }
-@media all and (min-width: 450px) and (max-width:999px){
-    .nav>div:nth-child(2) {
-        display: none;
-        
-        }
-        #burger{
-            display: block;
-        }
-        .why{
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            display: none; 
-        }
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #0c3245;
+    color: white;
+    padding: 10px;
+    display: none;
 }
-@media all and (min-width: 100px) and (max-width:449px){
+
+.teams>div {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+
+}
+
+.teams>div:hover {
+    background-color: #033954;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cases>div:hover {
+    background-color: #033954;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.apps>div:hover {
+    background-color: #033954;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.explore>div:hover {
+    background-color: #033954;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cases>div {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.apps>div {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.explore>div {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    color: lightgreen;
+}
+
+.plans {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10px;
+}
+
+.plans>div {
+    width: 90%;
+    padding: 10px;
+}
+
+.plans img {
+    width: 90%;
+}
+
+.plans>div:nth-child(2) h1 {
+    padding-top: 50px;
+    padding-left: 25px;
+    font-size: 35px;
+}
+
+.offer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 30px;
+
+}
+
+.offer>div {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 87%;
+    padding: 12px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+}
+
+.offer button {
+    margin: 10px;
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(37, 179, 37);
+}
+
+.offer button:hover {
+    cursor: pointer;
+    background-color: rgb(13, 122, 13);
+}
+
+.compare {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    height: auto;
+    background-color: rgb(167, 222, 204);
+    border-radius: 10px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.compare>div {
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+.compare+div{
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    font-size: 17px;
+    margin-top: 20px;
+    text-align: center;
+}
+.logoSection {
+    width: 85%;
+    margin: auto;
+    height: auto;
+}
+
+.logoSection>div {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    padding: 40px;
+}
+
+.logoSection>div+p {
+    text-align: center;
+}
+.features{
+    background-color: rgb(167, 222, 204);
+    padding-top: 10px;
+    border-radius: 10px;
+}
+.features>div:nth-child(1){
+    text-align: center;
+}
+.features>div:nth-child(2){
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 10px;
+    gap: 20px;
+   
+}
+.features>div:nth-child(2)>div{
+    display: flex;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+.features>div:nth-child(2) img{
+    width: 80%;
+    padding: 10px;
+}
+.features>div:nth-child(2)>div:hover{
+    background-color: rgb(2, 2, 48);
+    cursor: pointer;
+    color: white;
+}
+.footer {
+    background-color: #0c3245;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.footer>div:nth-child(1) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    color: white;
+    padding: 10px;
+}
+
+.getBtn>button:hover {
+    cursor: pointer;
+}
+.why{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+    background-color:#0c3245;
+    color: white;
+    padding: 10px;
+    display: none; 
+}
+.teams>div{
+    display: flex;  
+    justify-content: space-evenly;
+    padding: 15px;
+    
+}
+.teams>div:hover{
+background-color:#033954;
+border-radius: 10px;
+cursor: pointer;
+}
+.cases>div:hover{
+background-color:#033954;
+border-radius: 10px;
+cursor: pointer;
+}
+.apps>div:hover{
+background-color:#033954;
+border-radius: 10px;
+cursor: pointer;
+}
+.explore>div:hover{
+background-color:#033954;
+border-radius: 10px;
+cursor: pointer;
+}
+.cases>div{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+} 
+.apps>div{
+     display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.explore>div{
+    display: flex;
+    justify-content: space-evenly;
+   padding: 20px; 
+    color: lightgreen;
+}
+.bottam{
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid white;
+    padding: 10px;
+}
+.bottam>div{
+    width: 30%;
+    height: auto;
+}
+.bottam>div:nth-child(1){
+    display: flex;
+    justify-content: space-evenly;
+}
+.bottam>div:nth-child(2){
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    padding: 15px;
+}
+.bottam>div:nth-child(2)>img{
+    width:10%;
+    border-radius: 30%;
+}
+.bottam>div:nth-child(3){
+    color: white;
+    padding: 5px;
+}
+.box
+{
+    display: block;
+}
+
+@media all and (min-width: 450px) and (max-width:999px) {
     .nav>div:nth-child(2) {
         display: none;
-        
-        }
-        #burger{
-            display: block;
-        }
-        .why{
-            display: grid;
-            grid-template-columns: repeat(1,1fr);
-            display: none; 
-        }
+
+    }
+    .logoSection>div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .plans {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .offer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .features>div:nth-child(2){
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    #burger {
+        display: block;
+        padding: 10px;
+    }
+    .footer>div:nth-child(1) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .bottam>div:nth-child(2)>img{
+        width:10%;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .why {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        display: none;
+    }
+}
+
+@media all and (min-width: 100px) and (max-width:449px) {
+    .nav>div:nth-child(2) {
+        display: none;
+
+    }
+    .features>div:nth-child(2){
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .logoSection>div {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .plans {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .offer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer>div:nth-child(1) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .bottam>div:nth-child(2)>img{
+        width:10%;
+        height: 50px;
+        border-radius: 50%;
+    }
+    #burger {
+        display: block;
+        padding-left: 100px;
+    }
+    
+
+    .why {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        display: none;
+    }
 }
